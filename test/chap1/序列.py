@@ -1,3 +1,5 @@
+#序列指的是有序排列的数据容器，包括列表，元组，字符串
+#三者都能进行切片操作
 s='helloworld'
 for i in range(0,len(s)):
     print(i,s[i],end='\t\t')
