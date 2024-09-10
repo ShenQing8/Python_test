@@ -1,6 +1,6 @@
 #序列指的是有序排列的数据容器，包括列表，元组，字符串
 #三者都能进行切片操作
-s='helloworld'
+s = 'helloworld'
 for i in range(0,len(s)):
     print(i,s[i],end='\t\t')
 print()
@@ -8,9 +8,9 @@ for i in range(-len(s),0):
     print(i,s[i],end='\t')
 print()
 #切片操作,切片不会改变原先序列的值
-s1=s[0:len(s):2] #切片[起始位置 : 结束位置(不包含) : 切片长度]
+s1 = s[0:len(s):2]  # 切片[起始位置 : 结束位置(不包含) : 切片长度(默认为1)]
 print(s1)
-print(s[::-1])#利用切片操作逆序字符串
+print(s[::-1])# 利用切片操作逆序字符串
 print(s[-1:-len(s)-1:-1])
 
 print(max(s))
