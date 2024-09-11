@@ -17,9 +17,9 @@ print(max(s))
 print(min(s))
 print('h' in s)
 
-print(s.index('h'))#第一次在序列中出现的位置
+print(s.index('h'))# 第一次在序列中出现的位置
 #print(s.index('v'))#ValueError: substring not found 不存在则会报错
-print(s.find('orld'))#find函数可以用来找字符串，找到则返回所找字符串的第一个下标
-print(s.find('v'))#找不到则返回-1
+print(s.find('orld'))# find函数可以用来找字符串，找到则返回所找字符串的第一个下标
+print(s.find('v'))# 找不到则返回-1
 
-print(s.count('o'))#在序列中出现的总次数
+print(s.count('o'))# 在序列中出现的总次数
