@@ -48,13 +48,14 @@ def quick_sort3(arr):
 
     return quick_sort3(arr[0:left]) + std + quick_sort3(arr[left + 1:len(arr)])
 
-tt = [22, 5, 7, 3, 1, 88, 43, 486, 45, 5, 1, 86, 8, 4, 67, 64]
-tt = quick_sort(tt)
-print(f' quick_sort排序后的顺序是：{tt}')
-tt = [22, 5, 7, 3, 1, 88, 43, 486, 45, 5, 1, 86, 8, 4, 67, 64]
-tt = quick_sort2(tt)
-print(f'quick_sort2排序后的顺序是：{tt}')
-tt = [22, 5, 7, 3, 1, 88, 43, 486, 45, 5, 1, 86, 8, 4, 67, 64]
-tt = quick_sort3(tt)
-print(f'quick_sort3排序后的顺序是：{tt}')
+if __name__ == '__main__':
+    tt = [22, 5, 7, 3, 1, 88, 43, 486, 45, 5, 1, 86, 8, 4, 67, 64]
+    tt = quick_sort(tt)
+    print(f' quick_sort排序后的顺序是：{tt}')
+    tt = [22, 5, 7, 3, 1, 88, 43, 486, 45, 5, 1, 86, 8, 4, 67, 64]
+    tt = quick_sort2(tt)
+    print(f'quick_sort2排序后的顺序是：{tt}')
+    tt = [22, 5, 7, 3, 1, 88, 43, 486, 45, 5, 1, 86, 8, 4, 67, 64]
+    tt = quick_sort3(tt)
+    print(f'quick_sort3排序后的顺序是：{tt}')
 
