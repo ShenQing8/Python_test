@@ -13,5 +13,6 @@ line.set_global_opts(
     visualmap_opts=VisualMapOpts(is_show=True,min_=0,max_=50),
 )
 
+# 绘制图表
 line.render()
 
