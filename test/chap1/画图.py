@@ -10,7 +10,7 @@ line.set_global_opts(
     title_opts=TitleOpts(title="国家GDP",subtitle="仅展示三个国家",pos_left="center",pos_bottom="1%"),
     toolbox_opts=ToolboxOpts(is_show=True),
     legend_opts=LegendOpts(is_show=True),
-    visualmap_opts=VisualMapOpts(is_show=True,min_=0,max_=50),
+    visualmap_opts=VisualMapOpts(is_show=True,min_=0,max_=50)
 )
 
 # 绘制图表
