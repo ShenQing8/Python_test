@@ -41,5 +41,6 @@ map.set_global_opts(
                                     {"min": 900, "max": 1150}
                                  ])
 )
+
 # 绘图
 map.render("北京疫情趋势.html")
