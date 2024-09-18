@@ -1,9 +1,10 @@
 from pyecharts.charts import Map
 from pyecharts.options import TitleOpts, ToolboxOpts, VisualMapOpts
+from time import sleep
 import json
 
 # 导入数据
-f = open("E:/data/beijing.txt", "r", encoding="UTF-8")
+f = open("D:/github Code/Python_test/beijing.txt", "r", encoding="UTF-8")
 data_json = f.read()
 
 # 关闭文件
@@ -23,7 +24,12 @@ for data_list_pre in data_source:
 # 创建绘图对象
 map = Map()
 
-# # 添加绘图数据
+# # 创建动态绘图
+# for i in range(0,165):
+#     # 睡眠1秒
+#     sleep(1)
+
+# 添加绘图数据
 map.add("北京市疫情数据", data_list, "china")
 
 # 全局设置
@@ -33,12 +39,12 @@ map.set_global_opts(
     visualmap_opts=VisualMapOpts(is_show=True,
                                  is_piecewise=True,
                                  pieces=[
-                                    {"min": 0, "max": 49},
-                                    {"min": 50, "max": 149},
-                                    {"min": 150, "max": 399},
-                                    {"min": 400, "max": 649},
-                                    {"min": 650, "max": 899},
-                                    {"min": 900, "max": 1150}
+                                     {"min": 0, "max": 49},
+                                     {"min": 50, "max": 149},
+                                     {"min": 150, "max": 399},
+                                     {"min": 400, "max": 649},
+                                     {"min": 650, "max": 899},
+                                     {"min": 900, "max": 1150}
                                  ])
 )
 
