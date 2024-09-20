@@ -1,5 +1,5 @@
 from pyecharts.charts import Line
-from pyecharts.options import TitleOpts, ToolboxOpts, LegendOpts,VisualMapOpts
+from pyecharts.options import TitleOpts, ToolboxOpts, LegendOpts, VisualMapOpts
 
 line = Line()# 得到一个空的折线图基底
 line.add_xaxis(["中国", "美国", "日本"])# x轴数据
