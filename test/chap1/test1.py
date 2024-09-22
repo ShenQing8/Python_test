@@ -19,5 +19,7 @@ print(f'{nums[0:2]+nums[3:5]},{type(nums[0:2]+nums[3:5])}')
 k = [x*y for x in range(1,5) if x > 2 for y in range(1,4) if y < 3]
 print(k)
 
-# s, p = eval(input())
-# print(s, p)
+s, p = (input()).split(' ')
+s = int(s)
+p = int(p)
+print(s, p,type(s), type(p))
